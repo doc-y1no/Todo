@@ -11,35 +11,57 @@ body {
   margin: 0 auto;
 } */
 main {
-  background-color: #ffff99;
+  background-color: #FFF9E6;
   border-top-left-radius: 25px 25px;
   border-top-right-radius: 25px 25px;
   width: 360px;
   height: 600px;
   margin: 0px;
+  padding-top: 10px;
   /* flex: 1; */
 }
 body:last-child {
   margin-bottom: 0px;
 }
+.task-list {
+  list-style: none;
+  padding: 0;
+}
 .card {
+  position: relative;
+  background: #fff;
+  margin: 15px 0;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  /* margin-right: 10px; */
   width: 200px;
   height: 100px;
-  border-radius: 8px;
-  overflow: hidden;
+  /* background-color: #ffffff; */
+}
+.card--orange {
   background-color: #ffd8b1;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+.card--pink {
+  background-color: #FFD6EB;
+}
+.card--yellow {
+  background-color: #FFFC99;
+}
+.card__content {
+  margin-left: 10px;
+}
+
 .card__titletext {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 125%;
-  margin: 10px;
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
 }
+
 .card__overviewtext {
-  font-size: 12px;
-  line-height: 150%;
-  margin: 10px;
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #666;
 }
 .icon {
   width: 360px;
@@ -50,4 +72,33 @@ body:last-child {
   margin: 0;
   padding: 20px;
   text-align: center;
+}
+
+
+
+.card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  border-radius: 4px 0 0 4px;
+}
+
+/* カラーバリエーション */
+.card--orange::before {
+  background-color: #FF9F76;
+}
+
+.card--pink::before {
+  background-color: #FFB5E8;
+}
+
+.card--yellow::before {
+  background-color: #FFE66D;
+}
+
+.card__overviewtext{
+  list-style: inside;
 }
