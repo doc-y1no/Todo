@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,45 +11,57 @@
   <title>Document</title>
 </head>
 <body>
+
   <div class="container">
-  <header>
-    <h1>Dayly Task</h1>
+  <header class="header">
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+      <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+      </svg>
+    <h1>Daily Task</h1>
+
   </header>
 <main class="main-round">
   <ul class="task-list">
-    <li class="card card--orange">
-        <div class="card__content">
-          <p class="card__titletext">⏰️ 10:00 AM - 1PM</p>
-          <!-- <p class="card__overviewtext">task</p> -->
-           <ul>
-          <li class="card__overviewtext">task</li>
-        </ul>
-        </div>
-      </li>
-      <p class="tag"></p>
-    </li>
-    <li class="card card--pink">
-      <div class="card__content">
-        <p class="card__titletext">⏰️ 10:00 AM - 1PM</p>
-        <!-- <p class="card__overviewtext">task</p> -->
-        <ul>
-          <li class="card__overviewtext">task</li>
-        </ul>
+    <div class="tag-wrapper">
+      <p class="task-tag orange">Meeting</p>
+        <li class="card card--orange">
+          <div class="card__content">
+            <p class="card__titletext">⏰️ 10:00 AM - 1PM</p>
+            <ul>
+              <li class="card__overviewtext">task</li>
+            </ul>
+          </div>
+        </li>
+    </div>
+
+      <div class="line-wrapper">
+        <p class="vertical-dashed"></p>
       </div>
-    </li>
-    <p class="tag"></p>
-  </li>
-    <li class="card card--yellow">
-        <div class="card__content">
-          <p class="card__titletext">⏰️ 10:00 AM - 1PM</p>
-          <!-- <p class="card__overviewtext">task</p> -->
-          <ul>
-            <li class="card__overviewtext">task</li>
-          </ul>
-        </div>
-      </li>
-      <p class="tag"></p>
-    </li>
+
+    <div class="tag-wrapper">
+      <p class="task-tag pink">Meeting</p>
+        <li class="card card--pink">
+          <div class="card__content">
+            <p class="card__titletext">⏰️ 10:00 AM - 1PM</p>
+            <ul>
+              <li class="card__overviewtext">task</li>
+            </ul>
+          </div>
+        </li>
+    </div>
+
+    <div class="tag-wrapper">
+      <p class="task-tag yellow">Meeting</p>
+        <li class="card card--yellow">
+          <div class="card__content">
+            <p class="card__titletext">⏰️ 10:00 AM - 1PM</p>
+            <ul>
+              <li class="card__overviewtext">task</li>
+            </ul>
+          </div>
+        </li>
+    </div>
+
   </ul>
 </main>
 <footer>

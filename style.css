@@ -2,11 +2,21 @@ h1 {
   font-family: DM Serif Text;
 }
 body {
-  height: 960px;
   margin: 0 auto;
+  max-width: 422px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
-/* .container {
-  display: flex;
+ .container {
+ margin-top: 25px;
+ }
+  /* display: flex;
+  width: 100%;
+  height: 960px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
   flex-direction: column;
   margin: 0 auto;
 } */
@@ -14,23 +24,22 @@ main {
   background-color: #FFF9E6;
   border-top-left-radius: 25px 25px;
   border-top-right-radius: 25px 25px;
-  width: 360px;
+  width: 100%;
   height: 600px;
   margin: 0px;
   padding-top: 10px;
   /* flex: 1; */
 }
-body:last-child {
-  margin-bottom: 0px;
-}
 .task-list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0;
 }
 .card {
   position: relative;
   background: #fff;
-  margin: 15px 0;
   padding: 15px 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -63,15 +72,19 @@ body:last-child {
   font-size: 0.9rem;
   color: #666;
 }
+footer {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+}
 .icon {
-  width: 360px;
+  width: inheritant;
   height: 110px;
   background: #ffe3bd;
 }
 .footer-icon {
-  margin: 0;
-  padding: 20px;
-  text-align: center;
+  /* margin: 0; */
+  /* padding: 20px;
+  text-align: center; */
 }
 
 
@@ -86,7 +99,6 @@ body:last-child {
   border-radius: 4px 0 0 4px;
 }
 
-/* カラーバリエーション */
 .card--orange::before {
   background-color: #FF9F76;
 }
@@ -101,4 +113,108 @@ body:last-child {
 
 .card__overviewtext{
   list-style: inside;
+}
+
+.header {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: auto;
+}
+.header svg {
+  border-radius: 5px;
+}
+.header h1 {
+  border-radius: 5px;
+  padding: 1em;
+}
+.tag-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 15px 0;
+  height: 100%;
+}
+
+.task-tag {
+  border-radius: 100px;
+  padding: 1em;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-text-orientation: sideways-right;
+          text-orientation: sideways-right;
+}
+.orange {
+  background-color: #FF9F76;
+}
+.pink {
+  background-color: #FFB5E8;
+}
+.yellow {
+  background-color: #FFE66D;
+}
+.task-tag {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+.task-tag-orange {
+  background-color: #FF9F76;
+  border-radius: 5px;
+  padding: 1em;
+  color: #fff;
+  font-weight: bold;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-text-orientation: mixed;
+          text-orientation: mixed;
+  height: 100px;
+  line-height: 1;
+  margin-right: 10px;
+}
+
+.orange-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+
+.line-wrapper {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  transform: rotate(90deg);
+}
+
+/* .vertical-dashed {
+  border-bottom: 2px dashed #333;
+  width: 100px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-text-orientation: mixed;
+          text-orientation: mixed;
+
+} */
+
+//次の要素があったら追加するようにする
+.task-tag::after {
+  content: '';
+  position: absolute;
+  left: 23%;
+  top: 113%;
+  bottom: 0;
+  width: 30px;
+  border-radius: 4px 0 0 4px;
+  border-bottom: 2px dashed #333;
+  transform: rotate(90deg);
+}
+.task-tag:last-child::after {
+  display: none;  /* これだけに変更 */
 }
