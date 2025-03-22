@@ -14,16 +14,22 @@
 
   <div class="container">
   <header class="header">
-    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
-      <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
-      </svg>
+    <div class="three col">
+      <div class="hamburger" id="hamburger-9">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <br>
+    <br>
     <h1>Daily Task</h1>
 
   </header>
 <main class="main-round">
   <ul class="task-list">
     <div class="tag-wrapper">
-      <p class="task-tag orange">Meeting</p>
+      <p class="task-tag orange">Meeting<span class="vertical-dashed"></span></p>
         <li class="card card--orange">
           <div class="card__content">
             <p class="card__titletext">⏰️ 10:00 AM - 1PM</p>
@@ -34,12 +40,8 @@
         </li>
     </div>
 
-      <div class="line-wrapper">
-        <p class="vertical-dashed"></p>
-      </div>
-
     <div class="tag-wrapper">
-      <p class="task-tag pink">Meeting</p>
+      <p class="task-tag pink">Meeting<span class="vertical-dashed"></span></p>
         <li class="card card--pink">
           <div class="card__content">
             <p class="card__titletext">⏰️ 10:00 AM - 1PM</p>
@@ -49,7 +51,7 @@
           </div>
         </li>
     </div>
-
+    <!-- <span class="vertical-dashed"></span> 最後の要素が追加されたら左のクラスを追加して線でタグをつなぐように実装　-->
     <div class="tag-wrapper">
       <p class="task-tag yellow">Meeting</p>
         <li class="card card--yellow">
@@ -70,5 +72,6 @@
   </div>
 </footer>
 </div>
+<script src="app.js"></script>
 </body>
 </html>
