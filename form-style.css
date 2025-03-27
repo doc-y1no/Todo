@@ -1,0 +1,11 @@
+  body{
+  margin: 0;
+}
+.container {
+  box-sizing: border-box;
+  margin-top: 25px;
+  background-color: FF7A3B;
+  max-width: 422px;
+  height: 800px;
+  margin: 0 auto;
+  }
