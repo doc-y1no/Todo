@@ -69,11 +69,11 @@ footer {
   height: 110px;
   background: #ffe3bd;
 }
-.footer-icon {
-  /* margin: 0; */
-  /* padding: 20px;
-  text-align: center; */
-}
+/* .footer-icon {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+} */
 
 
 
@@ -194,6 +194,7 @@ footer {
 .tag-wrapper:last-child .vertical-dashed {
   display: none;
 }
+/* 以下不要？ */
 /* 次の要素があったら追加するようにする */
 .task-tag::after {
   content: '';
