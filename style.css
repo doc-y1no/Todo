@@ -194,7 +194,7 @@ footer {
 .tag-wrapper:last-child .vertical-dashed {
   display: none;
 }
-//次の要素があったら追加するようにする
+/* 次の要素があったら追加するようにする */
 .task-tag::after {
   content: '';
   position: absolute;
