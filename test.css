@@ -16,10 +16,10 @@ input[type='radio'],
 input[type='radio']:checked + section {
   top: 0;
 }
-/* .container {
+container {
   transition: all 500ms;
   transform-style: preserve-3d;
-} */
+}
 
 .container section {
   position: absolute;
