@@ -27,19 +27,10 @@ container {
   width: 100%;
   height: 100vh;
   transition: top 500ms;
-  /* transform-style: preserve-3d; */
+  transform-style: preserve-3d;
 }
 .container section.home {
   background: #2196f3;
-}
-.container section.about {
-  background: #ffc107;
-}
-.container section.work {
-  background: #4caf50;
-}
-.container section.contact {
-  background: #f44336;
 }
 .container section h1 {
   margin: 0;
