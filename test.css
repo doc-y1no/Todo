@@ -29,9 +29,9 @@ container {
   transition: top 500ms;
   transform-style: preserve-3d;
 }
-.container section.home {
+/* .container section.home {
   background: #2196f3;
-}
+} */
 .container section h1 {
   margin: 0;
   font-size: 64px;

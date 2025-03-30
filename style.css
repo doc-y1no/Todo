@@ -4,9 +4,9 @@ h1 {
 body {
   margin: 0 auto;
   max-width: 422px;
-  justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  justify-content: center;
 }
 main {
   background-color: #FFF9E6;
