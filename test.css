@@ -1,13 +1,14 @@
-/* body {
+body {
   margin: 0;
   padding: 0;
   font-weight: 300;
-  font-family: 'Raleway', sans-serif;
   background: #fff;
-  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.05) 80%, rgba(0,0,0,0.15) 100%);
   overflow: hidden;
   transform-style: preserve-3d;
-} */
+  overflow: auto;
+  align-items: center;
+  box-sizing: border-box;
+}
 
 input[type='radio'],
 .hide {
@@ -16,10 +17,11 @@ input[type='radio'],
 input[type='radio']:checked + section {
   top: 0;
 }
-/* .container {
+container {
   transition: all 500ms;
   transform-style: preserve-3d;
-} */
+
+}
 
 .container section {
   position: absolute;
@@ -29,18 +31,40 @@ input[type='radio']:checked + section {
   transition: top 500ms;
   transform-style: preserve-3d;
 }
+
 .container section.home {
-  background: #2196f3;
+  background: #ffffff;
 }
+.container section.home h1 {
+  color:rgba(152, 131, 131, 0.85);
+}
+.container section.about {
+  background: #f3b121;
+}
+
 .container section h1 {
-  margin: 0;
-  font-size: 64px;
-  transform: translate(0, 40vh);
+  font-size: 30px;
+  transform: translate(0, 4vh);
   text-align: center;
-  color: rgba(255,255,255,0.85);
+  color: #fff;
   transition: transform 500ms;
   transform-style: preserve-3d;
 }
+input[type='radio']:checked + .container section.about h1{
+  color: rgba(152, 131, 131, 0.85);
+}
+
+input[type='radio']:checked + .container section h1 {
+  font-size: 50px;
+}
+
+/* .container section.about h1 {
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 20px;
+} */
+
+
 .container section label {
   display: block;
   position: absolute;
@@ -77,11 +101,11 @@ input[type='radio']:checked + section {
   top: 20px;
 }
 .menu:hover {
-  background: #fff;
+  background: #161414;
 }
 .menu:hover::before,
 .menu:hover::after {
-  background: #fff;
+  background: #161414;
 }
 .menu div,
 .menu div label:nth-child(1) {
@@ -110,13 +134,14 @@ input[type='radio']:checked + section {
   transform: scale(0.5);
   transform-style: preserve-3d;
 }
+
 #menu:checked + .container + .menu {
   top: 30px;
   left: 20px;
   transform: rotate(225deg);
   transition: all 200ms;
   transform-origin: center center;
-  background: #646464;
+  background: #000000;
 }
 #menu:checked + .container + .menu::before,
 #menu:checked + .container + .menu::after {
@@ -153,27 +178,24 @@ input[type='radio']:checked + section {
 .container section.contact {
   z-index: 96;
 }
+
 #menu:checked + .container section.home {
-  top: 192px;
-}
-#menu:checked + .container section.home:hover {
-  top: 188px;
-}
-#menu:checked + .container section.about {
   top: 132px;
 }
+#menu:checked + .container section.home:hover {
+  top: 92px;
+}
+
+#menu:checked + .container section.about {
+  top: 52px;
+}
 #menu:checked + .container section.about:hover {
-  top: 128px;
+  top: 8px;
 }
-#menu:checked + .container section.work {
-  top: 72px;
-}
-#menu:checked + .container section.work:hover {
-  top: 68px;
-}
-#menu:checked + .container section.contact {
-  top: 12px;
+
+/* #menu:checked + .container section.contact {
+  top: 202px;
 }
 #menu:checked + .container section.contact:hover {
-  top: 8px;
+  top: 162px;
 }

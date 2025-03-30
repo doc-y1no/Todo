@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="test.css">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>作ろう会　Todo App</title>
 </head>
 <body>
 
@@ -14,28 +14,24 @@
 </html>
 
 <!-- 試しStyrus -->
+  <input type="radio" name="tab" id="menu"/>
+    <div class="container">
 
-              <header class="header">
-                <input type="radio" name="tab" id="menu"/>
-                <div class="container">
-                  <input type="radio" name="tab" checked="checked" id="home"/>
-                    <section class="home">
-                      <h1>Home</h1>
-                        <label for="home">
-                        </label>
-                        <div class="menu">
-                          <div>
-                            <label for="menu">
-                            </label>
-                            <label for="home">
-                            </label>
-                          </div>
-                        </div>
-                <br>
-                <br>
-                <h1>Daily Task</h1>
+      <input type="radio" name="tab" checked="checked" id="home"/>
+        <section class="home">
+          <div class="menu">
+            <div>
+              <label for="menu"></label>
+              <label for="home"></label>
+            </div>
+          </div>
+          <!-- 👇headerを外して選択/未選択毎に位置を変えるように設定する方がよさそう -->
+          <header class="header">
+            <h1>Daily Task</h1>
+          </header>
 
-              </header>
+            <label for="home">
+            </label>
             <main class="main-round">
               <ul class="task-list">
                 <div class="tag-wrapper">
@@ -73,17 +69,39 @@
                     </div>
                   </li>
               </div>
-
             </ul>
           </main>
-          </div>
-          </section>
           <footer>
             <div class="icon">
               <p class="footer-icon">アイコン表示予定</p>
             </div>
           </footer>
+        </section>
+
+        <input type="radio" name="tab" id="about"/>
+        <section class="about">
+          <div class="menu">
+            <div>
+              <label for="menu">
+              </label>
+              <label for="home">
+              </label>
+            </div>
+          </div>
+          <h1>Create New Task</h1>
+            <label for="about"></label>
+            <footer>
+              <div class="icon">
+                <p class="footer-icon">アイコン表示予定</p>
+              </div>
+            </footer>
+          </section>
+          </div>
+
+
           </div>
           <script src="app.js"></script>
+        </section>
+
         </section>
       </div>

@@ -1,22 +1,14 @@
 h1 {
   font-family: DM Serif Text;
 }
-body {
-  margin: 0 auto;
-  max-width: 422px;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-}
+
 main {
   background-color: #FFF9E6;
   border-top-left-radius: 25px 25px;
   border-top-right-radius: 25px 25px;
   width: 100%;
-  height: 600px;
-  margin: 0px;
+  height: 100vh;
   padding-top: 10px;
-  /* flex: 1; */
 }
 .task-list {
   list-style: none;
@@ -27,14 +19,10 @@ main {
 }
 .card {
   position: relative;
-  background: #fff;
   padding: 15px 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  /* margin-right: 10px; */
-  width: 200px;
   height: 100px;
-  /* background-color: #ffffff; */
 }
 .card--orange {
   background-color: #ffd8b1;
@@ -61,20 +49,18 @@ main {
   color: #666;
 }
 footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  -webkit-box-sizing: border-box;
-}
-.icon {
-  width: inheritant;
+  background-color: #ffe3bd;
   height: 110px;
-  background: #ffe3bd;
-}
-.footer-icon {
-  /* margin: 0; */
-  /* padding: 20px;
-  text-align: center; */
 }
 
+/* .footer-icon {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+} */
 
 
 .card::before {
@@ -194,28 +180,6 @@ footer {
 .tag-wrapper:last-child .vertical-dashed {
   display: none;
 }
-/* 次の要素があったら追加するようにする */
-.task-tag::after {
-  content: '';
-  position: absolute;
-  left: 23%;
-  top: 113%;
-  bottom: 0;
-  width: 30px;
-  border-radius: 4px 0 0 4px;
-  border-bottom: 2px dashed #333;
-  transform: rotate(90deg);
-}
-/* .task-tag:last-child::after {
-  display: none;
-} */
-
-/* ハンバーガーメニュー */
-.col {
-  display: block;
-  float:left;
-  margin: 1% 0 1% 1.6%;
-}
 
 /* CLEARFIX */
 
@@ -230,7 +194,7 @@ footer {
 }
 
 .cf {
-    *zoom: 1;
+    zoom: 1;
 }
 
 /* ALL */
@@ -256,46 +220,3 @@ footer {
   cursor: pointer;
 }
 
-/* NINE */
-
-#hamburger-9{
-  position: relative;
-  transition: all 0.3s ease-in-out;
-}
-
-#hamburger-9.is-active{
-  transform: rotate(45deg);
-}
-
-#hamburger-9:before{
-  content: "";
-  position: absolute;
-  box-sizing: border-box;
-  width: 70px;
-  height: 70px;
-  border: 5px solid transparent;
-  top: calc(50% - 35px);
-  left: calc(50% - 35px);
-  border-radius: 100%;
-  transition: all 0.3s ease-in-out;
-}
-
-#hamburger-9.is-active:before{
-  border: 5px solid #ecf0f1;
-}
-
-#hamburger-9.is-active .line{
-  width: 35px;
-}
-
-#hamburger-9.is-active .line:nth-child(2){
-  opacity: 0;
-}
-
-#hamburger-9.is-active .line:nth-child(1){
-  transform: translateY(13px);
-}
-
-#hamburger-9.is-active .line:nth-child(3){
-  transform: translateY(-13px) rotate(90deg);
-}
