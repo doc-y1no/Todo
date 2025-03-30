@@ -3,7 +3,6 @@ body {
   padding: 0;
   font-weight: 300;
   background: #fff;
-  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.05) 80%, rgba(0,0,0,0.15) 100%);
   overflow: hidden;
   transform-style: preserve-3d;
   overflow: auto;
@@ -160,13 +159,13 @@ container {
   top: 192px;
 }
 #menu:checked + .container section.home:hover {
-  top: 188px;
+  top: 162px;
 }
 #menu:checked + .container section.about {
   top: 132px;
 }
 #menu:checked + .container section.about:hover {
-  top: 128px;
+  top: 92px;
 }
 #menu:checked + .container section.work {
   top: 72px;
