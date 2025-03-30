@@ -39,13 +39,25 @@ container {
   background: #f3b121;
 }
 .container section h1 {
-  font-size: 64px;
-  transform: translate(0, 2vh);
+  font-size: 30px;
+  transform: translate(0, 4vh);
   text-align: center;
   color: rgba(152, 131, 131, 0.85);
   transition: transform 500ms;
   transform-style: preserve-3d;
 }
+
+input[type='radio']:checked + .container section h1 {
+  font-size: 50px;
+}
+
+/* .container section.about h1 {
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 20px;
+} */
+
+
 .container section label {
   display: block;
   position: absolute;
@@ -115,6 +127,7 @@ container {
   transform: scale(0.5);
   transform-style: preserve-3d;
 }
+
 #menu:checked + .container + .menu {
   top: 30px;
   left: 20px;
@@ -179,5 +192,3 @@ container {
 #menu:checked + .container section.contact:hover {
   top: 162px;
 }
-
-
