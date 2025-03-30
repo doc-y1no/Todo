@@ -31,6 +31,10 @@ container {
   transition: top 500ms;
   transform-style: preserve-3d;
 }
+
+.container section.home {
+  background: #ffffff;
+}
 .container section.about {
   background: #f3b121;
 }
@@ -79,11 +83,11 @@ container {
   top: 20px;
 }
 .menu:hover {
-  background: #fff;
+  background: #161414;
 }
 .menu:hover::before,
 .menu:hover::after {
-  background: #fff;
+  background: #161414;
 }
 .menu div,
 .menu div label:nth-child(1) {
@@ -118,7 +122,7 @@ container {
   transform: rotate(225deg);
   transition: all 200ms;
   transform-origin: center center;
-  background: #646464;
+  background: #000000;
 }
 #menu:checked + .container + .menu::before,
 #menu:checked + .container + .menu::after {
@@ -155,27 +159,32 @@ container {
 .container section.contact {
   z-index: 96;
 }
+
 #menu:checked + .container section.home {
-  top: 192px;
-}
-#menu:checked + .container section.home:hover {
-  top: 162px;
-}
-#menu:checked + .container section.about {
-  top: 132px;
-}
-#menu:checked + .container section.about:hover {
-  top: 92px;
-}
-#menu:checked + .container section.work {
   top: 72px;
 }
-#menu:checked + .container section.work:hover {
+#menu:checked + .container section.home:hover {
   top: 68px;
 }
-#menu:checked + .container section.contact {
+
+#menu:checked + .container section.about {
   top: 12px;
 }
-#menu:checked + .container section.contact:hover {
+#menu:checked + .container section.about:hover {
   top: 8px;
 }
+
+/* #menu:checked + .container section.contact {
+  top: 202px;
+}
+#menu:checked + .container section.contact:hover {
+  top: 162px;
+}
+#menu:checked + .container section.work {
+  top: 132px;
+}
+#menu:checked + .container section.work:hover {
+  top: 92px;
+} */
+
+
