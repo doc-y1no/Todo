@@ -52,21 +52,20 @@ main {
   font-size: 0.9rem;
   color: #666;
 }
-
 footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  -webkit-box-sizing: border-box;
-}
-.icon {
-  width: inheritant;
+  background-color: #ffe3bd;
   height: 110px;
-  background: #ffe3bd;
 }
+
 /* .footer-icon {
   margin: 0;
   padding: 20px;
   text-align: center;
 } */
+
 
 .card::before {
   content: '';

@@ -39,9 +39,8 @@ container {
   background: #f3b121;
 }
 .container section h1 {
-  margin: 0;
   font-size: 64px;
-  transform: translate(0, 40vh);
+  transform: translate(0, 2vh);
   text-align: center;
   color: rgba(152, 131, 131, 0.85);
   transition: transform 500ms;
@@ -161,14 +160,14 @@ container {
 }
 
 #menu:checked + .container section.home {
-  top: 72px;
+  top: 132px;
 }
 #menu:checked + .container section.home:hover {
-  top: 68px;
+  top: 92px;
 }
 
 #menu:checked + .container section.about {
-  top: 12px;
+  top: 52px;
 }
 #menu:checked + .container section.about:hover {
   top: 8px;
@@ -180,11 +179,5 @@ container {
 #menu:checked + .container section.contact:hover {
   top: 162px;
 }
-#menu:checked + .container section.work {
-  top: 132px;
-}
-#menu:checked + .container section.work:hover {
-  top: 92px;
-} */
 
 
