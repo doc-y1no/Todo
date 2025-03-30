@@ -1,13 +1,15 @@
-/* body {
+body {
   margin: 0;
   padding: 0;
   font-weight: 300;
-  font-family: 'Raleway', sans-serif;
   background: #fff;
   background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.05) 80%, rgba(0,0,0,0.15) 100%);
   overflow: hidden;
   transform-style: preserve-3d;
-} */
+  overflow: auto;
+  align-items: center;
+  box-sizing: border-box;
+}
 
 input[type='radio'],
 .hide {
@@ -19,6 +21,7 @@ input[type='radio']:checked + section {
 container {
   transition: all 500ms;
   transform-style: preserve-3d;
+
 }
 
 .container section {
@@ -29,15 +32,15 @@ container {
   transition: top 500ms;
   transform-style: preserve-3d;
 }
-/* .container section.home {
-  background: #2196f3;
-} */
+.container section.about {
+  background: #f3b121;
+}
 .container section h1 {
   margin: 0;
   font-size: 64px;
   transform: translate(0, 40vh);
   text-align: center;
-  color: rgba(255,255,255,0.85);
+  color: rgba(152, 131, 131, 0.85);
   transition: transform 500ms;
   transform-style: preserve-3d;
 }
